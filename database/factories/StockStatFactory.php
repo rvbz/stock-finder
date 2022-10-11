@@ -19,9 +19,9 @@ class StockStatFactory extends Factory
     {
         return [
             'symbol' => Str::random(7),
-            'high' => fake()->randomFloat(4, 0, 9999999999),
-            'low' => fake()->randomFloat(4, 0, 9999999999),
-            'price' => fake()->randomFloat(4, 0, 9999999999)
+            'high' => fake()->randomFloat(4, 0, 999999),
+            'low' => fake()->randomFloat(4, 0, 999999),
+            'price' => fake()->randomFloat(4, 0, 999999)
         ];
     }
 }

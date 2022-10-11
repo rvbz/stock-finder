@@ -43,6 +43,13 @@ class StockStatTest extends TestCase
         $this->assertAuthenticated();
 
         $response = $this->get('/api/stock-symbol/search/' . Str::random(7));
-        $response->assertStatus(200);
+        $response->assertSuccessful();
+    }
+
+    public function test_can_store_stock()
+    {
+        $stock = StockStat::factory()->create();
+
+        $this->assertModelExists($stock);
     }
 }
