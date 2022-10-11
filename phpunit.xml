@@ -26,5 +26,7 @@
         <env name="QUEUE_CONNECTION" value="sync"/>
         <env name="SESSION_DRIVER" value="array"/>
         <env name="TELESCOPE_ENABLED" value="false"/>
+        <env name="STOCK_API_SERVER" value="https://www.alphavantage.co/"/>
+        <env name="STOCK_API_KEY" value="0O18XUJW9P8QVGQJ"/>
     </php>
 </phpunit>
