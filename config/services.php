@@ -32,9 +32,9 @@ return [
     ],
 
     'facebook' => [
-        'client_id' => '408962648093794', //USE FROM FACEBOOK DEVELOPER ACCOUNT
-        'client_secret' => '05fcdf7f72a7687b6d79ca57cd76ecfa', //USE FROM FACEBOOK DEVELOPER ACCOUNT
-        'redirect' => 'http://localhost/facebook/callback/'
+        'client_id' => env('FACEBOOK_CLIENT_ID'), //USE FROM FACEBOOK DEVELOPER ACCOUNT
+        'client_secret' => env('FACEBOOK_CLIENT_SECRET'), //USE FROM FACEBOOK DEVELOPER ACCOUNT
+        'redirect' => env('FACEBOOK_REDIRECT_URL')
     ],
 
 ];
